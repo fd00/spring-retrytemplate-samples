@@ -1,0 +1,19 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'io.github.fd00.org.springframework.retry.samples.Main'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.16.12'
+    compile 'org.slf4j:slf4j-simple:1.7.22'
+    compile 'org.springframework.retry:spring-retry:1.2.0.RELEASE'
+}
